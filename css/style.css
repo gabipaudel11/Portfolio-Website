@@ -64,7 +64,7 @@ i{font-style:italic}
 .hero__scroll{display:flex;gap:8px;align-items:center}
 .hero__scroll span{display:inline-block;animation:bob 2s var(--ease) infinite}
 @keyframes bob{50%{transform:translateY(5px)}}
-@media (max-width:700px){.hero__top{grid-template-columns:1fr 1fr}.hero__top p:nth-child(2){display:none}.line--indent{padding-left:0}.hero__scroll{display:none}}
+@media (max-width:700px){.hero{min-height:auto;padding-top:88px;padding-bottom:48px}.hero__title{font-size:25vw;margin-top:12vh}.hero__bottom{margin-top:9vh}.hero__top{grid-template-columns:1fr 1fr}.hero__top p:nth-child(2){display:none}.line--indent{padding-left:0}.hero__scroll{display:none}}
 
 /* marquee */
 .marquee{overflow:hidden;border-block:1px solid var(--line);padding:18px 0;white-space:nowrap}
