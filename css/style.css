@@ -134,10 +134,11 @@ i{font-style:italic}
 .poster:nth-child(6n+1){grid-column:1/6}
 .poster:nth-child(6n+2){grid-column:7/13;margin-top:18vh}
 .poster:nth-child(6n+3){grid-column:2/6}
-.poster:nth-child(6n+4){grid-column:7/11;margin-top:-10vh}
+.poster:nth-child(6n+4){grid-column:7/11;margin-top:6vh}
 .poster:nth-child(6n+5){grid-column:1/5}
 .poster:nth-child(6n+6){grid-column:6/13;margin-top:12vh}
-@media (max-width:760px){.posters__grid{grid-template-columns:1fr 1fr}.poster:nth-child(n){grid-column:auto;margin-top:0}}
+@media (max-width:760px){.posters__grid{grid-template-columns:1fr 1fr}.poster:nth-child(n){grid-column:auto;margin-top:0}.poster figcaption{flex-direction:column;gap:2px;font-size:11px}}
+@media (max-width:760px){.nav{mix-blend-mode:normal;color:var(--ink);background:rgba(239,235,227,.92);backdrop-filter:blur(10px);padding-top:12px;padding-bottom:12px;border-bottom:1px solid var(--line)}}
 
 /* experience */
 .exp{background:var(--moss);color:var(--cream);padding:clamp(96px,14vw,200px) 0}

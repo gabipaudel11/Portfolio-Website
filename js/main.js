@@ -128,7 +128,7 @@ else {
     .add(() => { loader.remove(); lenis && lenis.start(); });
 
   // hero drifts on scroll
-  gsap.to('.hero__title', { yPercent: -18, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+  gsap.to('.hero__portrait img', { scale: 1.25, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
 
   // section titles and split paragraphs rise word by word
   document.querySelectorAll('.split:not(.hero__intro)').forEach(el => {
@@ -151,7 +151,7 @@ else {
   // posters: reveal + parallax
   gsap.utils.toArray('.poster').forEach((p, i) => {
     gsap.from(p.querySelector('.poster__img'), { clipPath: 'inset(100% 0 0 0)', duration: 1.4, ease: 'expo.out', scrollTrigger: { trigger: p, start: 'top 90%' } });
-    gsap.to(p, { y: (i % 2 ? -60 : 30), ease: 'none', scrollTrigger: { trigger: p, start: 'top bottom', end: 'bottom top', scrub: true } });
+    if (innerWidth > 760) gsap.to(p.querySelector('img'), { yPercent: -6, scale: 1.12, ease: 'none', scrollTrigger: { trigger: p, start: 'top bottom', end: 'bottom top', scrub: true } });
   });
 
   // about image parallax
